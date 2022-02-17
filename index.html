@@ -34,20 +34,27 @@
 
                     <!-- right side input field -->
                     <div class="col-md-6">
-                        <div class="text text-center">
-                            <h4 class="heading">Income</h4>
-                            <label for="income-input">income :</label>
-                            <input id="income-input" type="text">
+                        <div class="text text-center position-relative">
+                            <div class="position-relative">
+                                <h4 class="heading">Income</h4>
+                                <label for="income-input">income :</label>
+                                <input id="income-input" type="text">
 
-                            <h4 class="heading">Expences</h4>
-                            <label for="food-input">&nbsp; &nbsp; Food :</label>
-                            <input id="food-input" type="text">
-                            <br> <br>
-                            <label for="rent-input">&nbsp; &nbsp; &nbsp; Rent :</label>
-                            <input id="rent-input" type="text">
-                            <br> <br>
-                            <label for="cloth-input">Clothes :</label>
-                            <input id="cloth-input" type="text">
+                                <h4 class="heading">Expences</h4>
+                                <label for="food-input">&nbsp; &nbsp; Food :</label>
+                                <input id="food-input" type="text">
+                                <br> <br>
+                                <label for="rent-input">&nbsp; &nbsp; &nbsp; Rent :</label>
+                                <input id="rent-input" type="text">
+                                <br> <br>
+                                <label for="cloth-input">Clothes :</label>
+                                <input id="cloth-input" type="text">
+								
+								<!-- error notify -->
+                                <div id="alert-2" class="main-alert">
+                                    <p class="p-0 m-0">Your have not Enf Money <span onclick="removeAlert('alert-2')">❌</span></p>
+                                </div>
+                            </div>
 
                             <br> <br>
                             <button id="calculate-btn" onclick="calculate()" class="button mb-4">Calculate</button>
@@ -68,9 +75,12 @@
                             <h4>&nbsp; &nbsp; &nbsp; Saving Amount: <span id="saving-amount">00</span></h4>
 
                             <h4>Remaining Balance: <span id="remaining-balance">00</span></h4>
-
+							
+							<!-- error notify -->
+                            <div id="alert-1" class="main-alert">
+                                <p class="p-0 m-0">please Enter valid Amount <span onclick="removeAlert('alert-1')">❌</span></p>
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>
