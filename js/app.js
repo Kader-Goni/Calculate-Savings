@@ -21,3 +21,24 @@ function calculate(){
     return totalBalance;
 }
 
+
+// SaveMoney Function 
+function saveMoney(){
+    // saving balance
+    const incomeValue = document.getElementById('income-input').value;
+    const saveInput = document.getElementById('saving-input').value;
+    const saveMoney = parseFloat(incomeValue) * parseFloat(saveInput) / 100 ;
+
+    // saving ammount
+    const savingAmmount = document.getElementById('saving-amount');
+    const savingAmmountText = savingAmmount.innerText;
+    savingAmmount.innerText = saveMoney;
+
+    // remaining balance
+    const previousBlance = document.getElementById('balance').innerText;
+    const remainingCalculate = parseFloat(previousBlance) - saveMoney;
+    document.getElementById('remaining-balance').innerText = remainingCalculate;
+
+}
+
+
