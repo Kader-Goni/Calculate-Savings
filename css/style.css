@@ -26,3 +26,57 @@ body {
 /* ====================
     common CSS ends
 ======================= */
+
+header h1 {
+  color: #31a5ac;
+  text-align: center;
+  margin: 20px;
+}
+
+.section-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.item {
+  width: 50%;
+  background-color: #f8f8f8;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.text {
+  background-color: #f8f8f8;
+  padding: 70px 0;
+  text-align: center;
+
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.text .heading {
+  margin: 15px;
+}
+
+img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+input {
+  background-color: #dcdcdc;
+}
+
+/* ====================
+    main section CSS ends
+======================= */
+
